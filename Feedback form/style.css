@@ -1,0 +1,22 @@
+.feedback-wrapper{
+    overflow: scroll;
+}
+input,textarea,button,select{
+    outline: auto;
+}
+.feedback{
+    margin-bottom: 10px;
+}
+.feedback-wrapper{
+    margin: auto;
+    width: 80vw;
+    background-color: #ebebeb;
+    padding: 50px 0px;
+}
+.inp{
+    padding: 5px ;
+}
+.inp{
+    height: 35px;
+    width: 300px;
+}

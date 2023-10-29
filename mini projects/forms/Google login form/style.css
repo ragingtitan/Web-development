@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.head{
+    margin: 20px;
+    padding: 20px;
+}
+.body{
+    display: flex;
+    height: 97vh;
+    width: 97vw;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.google{
+    display: flex;
+    justify-content: center;
+}
+.form{
+    display: flex;
+    width: 500px;
+    height: 448px;
+    justify-content: center;
+    border: rgb(215 211 211) 0.5px solid ;
+    border-radius: 5px;
+}
+.sign-in{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    padding: 5px;
+}
+.sign-in p{
+    font-size: 25px;
+}
+.txt{
+    display: flex;
+    justify-content: center;
+    margin: 4px;
+    padding: 4px;
+}
+.txt p{
+    font-size: 18px;
+}
+.mid{
+    display: flex;
+    justify-content: center;
+    margin-top: 26px;
+}
+.head svg{
+    display: flex;
+    justify-content: center;
+}
+.mid form input{
+    width: 385px;
+    height: 55px;
+    border-radius: 4px;
+}
+.forgot{
+    display: flex;
+    padding-top: 7px;
+    margin-left: 0px;
+}
+.forgot a{
+    text-decoration: none;
+}
+.forgot p{
+    color: rgb(26,115,232);
+    font-weight: 600;
+    font-size: 14px;
+}
+.msg{
+    display: flex;
+    margin-top: 17px;
+    padding-top: 17px;
+    flex-direction: column;
+}
+.learn{
+    display: flex;
+}
+.msg a{
+    text-decoration: none;
+}
+.msg .learn p{
+    color: rgb(26,115,232);
+    font-weight: 600;
+    font-size: 14px;
+}
+.create-account{
+    display: flex;
+    margin-top: 20px;
+    padding-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+.create-account p{
+    color: rgb(26,115,232);
+    font-weight: 600;
+    font-size: 15px;
+}
+.create-account a{
+    text-decoration: none;
+}
+.create-account button{
+    width: 79px;
+    height: 36px;
+    background-color:rgb(26,115,232);
+    border: none; 
+    border-radius: 4px;
+}
+.create-account button p{
+    color: white;
+}
+.foot{
+    display: flex;
+    justify-content: space-between;
+    width: 502px;
+    margin-top: 28px;
+    font-size: 12px;
+    font-weight: 550;
+}
+.foot button{
+    border: none;
+}
+.foot button:hover{
+    cursor: pointer;
+}
+.foot2{
+    display: flex;
+    justify-content: space-between;
+    width: 166px;
+}
+.footer1-1 a{
+    text-decoration: none;
+    color: black;
+}
+.footer1-2 a{
+    text-decoration: none;
+}
+.footer1-3 a{
+    text-decoration: none;
+}

@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@keyframes bar{
+    0%{
+        height: 10px;
+        width: 0px;
+    }
+    100%{
+        height: 10px;
+        width: 100vw;
+    }
+}
+.progressbar{
+    height: 10px;
+    width: 1px;
+    background-color: red;
+    animation-name: bar;
+    animation-duration: 5s;
+    animation-iteration-count: infinite; 
+}
+.progressbar2{
+    margin-top: 100px;
+    height: 10px;
+    width: 1px;
+    background-color: red;
+    transition-property: width;
+    transition-duration: 3s;
+    /*transition-timing-function: ease-out;*/
+}
+.progressbar2:hover {
+        width: 100%;
+}
+@keyframes rotimg {
+    50%{
+        transform: rotate(180deg)
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+img{
+    animation-name: rotimg;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+
+}

@@ -1,0 +1,43 @@
+html{
+    height: 100%;
+    width: 100%;
+}
+body{
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+}
+.out{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    
+}
+#main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+    width: 30%;
+    background-color: aqua;
+    text-align: center;
+}
+@keyframes appearEffect {
+    0%{
+        opacity: 0;
+    }         
+    100%{
+        opacity: 1;
+    }   
+}
+#main{
+    animation-name: appearEffect;
+    animation-duration: 2s;
+}
+.button{
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,43 @@
+
+body{
+    background-color: white;
+}
+.navigation-bar{
+    height: vh;
+    opacity: 0.6;
+    background-color: black;
+    min-height:9vh;
+    
+    justify-content: center;
+}
+.navbar{
+    display: flex;
+    
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    /*justify-content: space-around;*/
+}
+.navbar ul li{
+    list-style: none;
+    margin: 10px 80px;
+}
+.description{
+    margin: auto;    
+    width: 80vw;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.inner-wrapper-description{
+    padding: 10px 0px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
