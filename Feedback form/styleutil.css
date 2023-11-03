@@ -2,11 +2,20 @@
 .font-size-50px{
     font-size: 50px;
 }
+.font-size-45px{
+    font-size: 45px;
+}
 .font-size-40px{
     font-size: 40px;
 }
+.font-size-35px{
+    font-size: 35px;
+}
 .font-size-30px{
     font-size: 30px;
+}
+.font-size-25px{
+    font-size: 25px;
 }
 .font-size-20px{
     font-size: 20px;
@@ -24,11 +33,8 @@
 .b{
     font-style: bold;
 }
-.centre{
+.center{
     text-align: center;
-}
-.p-w{
-    width: 10px;
 }
 .pxs{
     padding: 0px 10px;
@@ -54,9 +60,6 @@ a:hover{
 .flex{
     display: flex;
 }
-.psb{
-    padding: 5px;
-}
 .border{
     border: 1px solid black;
 }
@@ -68,4 +71,45 @@ a:hover{
 }
 .pyl{
     padding: 100px 0px;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+.ptop{
+    padding-top: 50px;
+}
+.pbot{
+    padding-bottom: 50px;
+}
+.pstop{
+    padding-top: 25px;
+}
+.psbot{
+    padding-bottom: 25px;
+}
+.mtop{
+    margin-top: 50px;
+}
+.mbot{
+    margin-bottom: 50px;
+}
+.mstop{
+    margin-top: 25px;
+}
+.msbot{
+    margin-bottom: 25px;
+}
+
+/*Colours*/
+.black{
+    color: black;
+}
+.gold{
+    color: gold;
+}
+.white{
+    color: white;
 }

@@ -4,96 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feedback Form</title>
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styleutil.css">
 </head>
 <body>
-    <div class="feedback">
-        <div class="header flex justify-center pym">
-            <div class="text-5xl">Portfolio Feedback</div>
-        </div>
-        
-        <div class="feedback-wrapper border flex justify-center">
-            <form action="process_feedback.php" method="post" class="form">
-                <div class="name p">
-                    <label class="font-size-20px" for="name">Name:</label>
-                    <input class="rounded  inp" type="text" id="name" name="name" required>
-                </div>
+    <h1 class="center mtop mbot font-size-45px">Feedback Form</h1>
+    <div class="body">
+        <div class="form-wrapper">
+            <form action="" class="form">
+                <label class="username" for="Name">Username:</label>
+                <input class="username mstop msbot" type="text" placeholder="Username" required>
                 <br>
-                <div class="email p">
-                    <label class="font-size-20px" for="email">Email:</label>
-                    <input class="rounded  inp" type="email" id="email" name="email" required>
-                </div>
+                <label class="email" for="Email">Email:</label>
+                <input type="text" class="email mstop msbot" placeholder="Email" required>
                 <br>
-                <div class="feedback-type p">
-                    <label class="font-size-20px" for="feedbackType">Feedback Type:</label>
-                    <select class="ps" id="feedbackType" name="feedbackType" required>
-                    <option value="Project Feedback">Project Feedback</option>
-                    <option value="General Feedback">General Feedback</option>
-                    <option value="Testimonial">Testimonial</option>
-                </select>
-                </div>
+                <label class="password for="Password">Password:</label>
+                <input type="password" class="password mstop msbot" placeholder="Password" required>
                 <br>
-                <div class="rating p">
-                    <label class="font-size-20px" for="rating">Rating:</label>
-                    <input class="ps" type="number" id="rating" name="rating" min="1" max="5" required>
-                </div>
-                <br>
-                <div class="project p">
-                    <label class="font-size-20px" for="project">Project:</label>
-                    <select class="ps" id="project" name="project" required>
-                    <option value="Project 1">Project 1</option>
-                    <option value="Project 2">Project 2</option>
-                    <option value="Project 3">Project 3</option>
-                    <!-- Add more project options -->
-                </select>
-                </div>
-                <br>
-                <div class="skills p">
-                    <label class="font-size-20px" for="webDesign">Web Design:</label>
-                    <input class="ps" type="number" id="webDesign" name="webDesign" min="1" max="5" required>
-                </div>
-                <br>
-                <!-- Repeat similar fields for other skills -->
-                <div class="nav p">
-                    <label class="font-size-20px" for="navigation">Website Navigation:</label>
-                    <select class="ps" id="navigation" name="navigation" required>
-                        <option value="Very Easy">Very Easy</option>
-                        <option value="Somewhat Easy">Somewhat Easy</option>
-                        <option value="Average">Average</option>
-                        <option value="Not Easy">Not Easy</option>
-                        <option value="Hard">Hard</option>
-                        <!-- Add more navigation options -->
-                    </select>
-                </div>
-                <br>
-                <div class="visual p">
-                    <label class="font-size-20px" for="visualAppeal">Visual Appeal:</label>
-                    <input class="ps" type="number" id="visualAppeal" name="visualAppeal" min="1" max="5" required>
-                </div>
-                <br>
-                <div class="ease p">
-                    <label class="font-size-20px" for="easeOfUse">Ease of Use:</label>
-                    <input class="ps" type="number" id="easeOfUse" name="easeOfUse" min="1" max="5" required>
-                </div>
-                <br>
-                <div class="impression p">
-                    <label class="font-size-20px" for="impression">Overall Impression:</label>
-                    <input class="ps" type="number" id="impression" name="impression" min="1" max="5" required>
-                </div>
-                <br>
-                <div class="msg p">
-                    <label class="font-size-20px" for="message">Message:</label><br>
-                    <textarea class="ps  inp" id="message" name="message" rows="4" cols="50"
-                    placeholder="Write your feedback" required></textarea>
-                </div>
-                <br>
-                <div class="submit-btn flex justify-center">
-                    <button class="psb" type="submit">Submit</button>
+                <div class="btn">
+                    <button id="submit" class="mstop msbot">Submit</button>
                 </div>
             </form>
         </div>
     </div>
+    
+    
 </body>
 </html>
