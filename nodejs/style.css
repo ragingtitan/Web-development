@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    padding: 0;
+    /*font-family: "Riona Sans W01 Bold Italic";*/
+}
+@keyframes chevron-animation {
+    0%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: #f1f3f6;
+}
+/*Styling Navigation bar*/
+.navbar{
+    display: flex;
+    align-items: center;
+    background-color:#2874f0 ;
+    height: 56px;   
+    
+}
+.empty-buffer{
+    height:56px;
+    width: 20vw;
+    min-width: 124px;
+}
+.font-text{
+    font-size: 11px;
+    font-style: italic;
+    color: #f0f0f0;
+    font-weight: 400;
+    font-family: "Riona Sans W01 Bold Italic";
+}
+.nav-flipkart-text{
+    display: flex;
+    width: 76px;
+}
+.nav-flipkart-text img{
+    height: 10px;
+    width: 10px;
+}
+.nav-flipkart a{
+    text-decoration: none;
+}
+.gold{
+    color: gold;
+}
+.search-box-flipkart{
+    display: flex;
+    align-items: center;
+    margin: 0px 20px;
+    /*margin-left: 12px;*/
+    width: 29.5vw;
+    min-width: 300px;
+}
+.search-box-flipkart input{
+    height: 36px;
+    min-width: 300px;
+    width: 29.5vw;
+    padding: 12px;
+    border: none;
+}
+.search-btn{
+    background-color: white;
+}
+.search-btn button{
+    margin-top: 2px;
+    border: none;
+    margin-left: -30px;
+    background-color: white;
+}
+.search-btn button:hover{
+    cursor: pointer;
+}
+.login-btn{
+    margin: 0px 20px;
+}
+.login-btn button{
+    width: 121.5px;
+    height: 31px;
+    font-size: 14px;
+    font-family: "Riona Sans W01 Regular";
+    color: #2874f0;
+    font-weight: 630;
+    border: 1px black;    
+    border-radius: 1px;
+    background-color: #fff;
+}
+.login-btn button:hover{
+    cursor:  pointer;
+}
+.login-btn button svg{
+    transform: rotateZ('180deg')
+}
+.become-a-seller{
+    margin: 0px 20px;
+}
+.become-a-seller p{
+    color: #fff;
+    font-family: "Riona Sans W04 Bold";
+    font-size: 15px;
+}
+.become-a-seller a{
+    text-decoration: none;
+}
+.More{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 20px;
+    width: 52px;
+}
+.More p{
+    color: #fff;
+    font-family: "Riona Sans W04 Bold";
+    font-size: 15px;
+}
+.More svg{
+    color: #f0f0f0;
+    transform: rotate(180deg);
+}
+.More svg:hover{
+    animation-name: chevron-animation ;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+.cart{
+    display: flex;
+    align-items: center;
+    
+    margin: 0px 20px;
+    font-size: 15px;
+}
+.cart p{
+    margin-left: 8px;
+    color: #fff;
+    font-family: "Riona Sans W04 Bold";
+    font-size: 15px;
+}
+.cart a{
+    text-decoration: none;
+}
+/*designing body*/
+.body-top{
+    background-color: #fff;
+}
+.category{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#fff;
+    height: 112.6px;
+    width:100%;
+    border-bottom: 1px #d5d5d5 solid;
+}
+.category a{
+    text-decoration: none;
+}
+.category p{
+    font-family: "Riona Sans W01 Regular";
+    font-size: 12px;
+    color: black;
+    font-weight: 600;
+    text-align: center;
+}
+.grocery{
+    display: flex;
+    justify-content: center;
+    padding: 0px 22px;
+}
+.mobile{
+    display: flex;
+    justify-content: center;
+    padding: 0px 22px;
+}
+.fashion{
+    display: flex;
+    justify-content: center;
+    padding: 0px 22px;
+}
+.electronic{
+    display: flex;
+    justify-content: center;
+    padding: 0px 22px;
+}
+.home-and-furniture{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0px 22px;
+}
+.home-and-furniture img{
+    padding-left: 13px;
+}
+.appliance{
+    display: flex;
+    justify-content: center;
+    padding: 0px 22px;
+}
+.travel{
+    display: flex;
+    justify-content: center;
+    padding: 0px 22px;
+}
+.top-offer{
+    display: flex;
+    justify-content: center;
+    padding: 0px 22px;
+}
+.beauty-toy-more{
+    display: flex;
+    justify-content: center;
+    padding: 0px 22px;
+}
+.beauty-toy-more img{
+    padding-left: 24px;
+}
+.two-wheeler{
+    display: flex;
+    justify-content: center;
+    padding: 0px 22px;
+}
+.two-wheeler img{
+    padding-left: 6px;
+}
+.banner{
+    display: flex;
+    justify-content: center;
+}
+.banner img{
+    margin-top: 10px;
+}
+.banner .chevron-right svg{
+    transform: rotate(180deg);
+}
+.chevron-left,.chevron-right{
+    display: flex;
+    align-items: center;
+    height: 280px;
+}
+.banner .chevron-left button{
+    overflow: auto;
+    position: relative;
+    left: 45px;
+    height: 104px;
+    width: 45px;
+    border: none;
+    margin-top: 10px;
+    background-color:#fff;
+    border-radius: 5px;
+}
+.banner .chevron-right button{
+    overflow: auto;
+    position: relative;
+    right: 45px;
+    height: 104px;
+    width: 45px;
+    border: none;
+    margin-top: 10px;
+    background-color:#fff;
+    border-radius: 5px;
+}
+button:hover{
+    cursor: pointer;
+}
+.body-low {
+    height: 361px;
+    width: 1680px;
+    background-color: #fff;
+    margin: auto;
+    margin-top: 10px;
+}
+.best-of-electronic{
+    font-family: "Riona Sans W01 Regular";
+    display: flex;
+    justify-content: center;
+    width: 230px;
+    height: 100%;
+    background-image: url("https://rukminim1.flixcart.com/fk-p-flap/278/278/image/7593e7b6640822c1.jpg?q=90");
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+.container-best-of-electronic{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.view-all-btn button{
+    margin-top: 10px;
+    height: 33px;
+    width: 90px;
+    border: none;
+    background-color: #2874f0;
+    color: #fff;
+}
+.text-best-of-electronics h2{
+    font-size: 35px;
+    text-align: center;
+    font-style: bold;
+    font-weight: lighter;
+}
+._14mA3H{
+    
+    height: 361px;
+}
