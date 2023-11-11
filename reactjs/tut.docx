@@ -1,0 +1,14 @@
+- app.js is the primary component and is to be shown in the website structure in a server
+
+- you can add addditional components like app.js
+
+-The jsx is the portion returned in the app.js
+
+- This is basically a html structure
+
+- htmlFor, tabIndex, className
+
+- return only 1 element in jsx in app.js
+
+- or use jsx fragment
+
