@@ -86,7 +86,6 @@
 .body .prompt{
   height: 200px;
   width: 50vw;
-  background-color: blue;
   margin: auto;
   margin-top: 100px;
   margin-bottom: 100px;
@@ -94,7 +93,6 @@
 .body .output{
   height: 200px;
   width: 50vw;
-  background-color: red;
   margin: auto;
   margin-top: 100px;
   margin-bottom: 100px;
