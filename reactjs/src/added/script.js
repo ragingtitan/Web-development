@@ -1,6 +1,10 @@
-const data = "Home is not Home it is heaven";
-const init = "home"
-const final = "not"
+
+let prompt=document.getElementById("prompt");
+console.log("prompt:"+prompt.value);
+let output=document.getElementById("output");
+console.log("Output:"+output.value);
+
+
 //count words 
 
 function countWords(data) {

@@ -49,7 +49,7 @@ function App() {
 <body>
   <div className="body">
     <div className="prompt">
-      <textarea name="" id="" placeholder="Write your text here"></textarea>
+      <textarea name="" id="pmt" placeholder="Write your text here"></textarea>
       <div class="dropdown">
       <button class="btn btn-secondary dropdown-toggle" type="button"     data-bs-toggle="dropdown" aria-expanded="false">
         Dropdown button
@@ -66,7 +66,7 @@ function App() {
 </div>
     </div>
     <div className="output">
-      <textarea name="" id="" placeholder="Output will be produced here"></textarea>
+      <textarea name="" id="out" placeholder="Output will be produced here"></textarea>
     </div>
   </div>
 </body>
