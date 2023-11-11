@@ -3,7 +3,8 @@ import './App.css';
 
 function App() {
   return (
-<nav className="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+<>
+    <nav className="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
   <div className="container-fluid">
     <a className="navbar-brand" href="/">TextUtils</a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,7 +36,7 @@ function App() {
           <a className="nav-link active" aria-disabled="page">Contact</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link active" aria-disabled="page">Feedback</a>
+          <a className="nav-link active" aria-disabled="page">FAQs</a>
         </li>
       </ul>
       <form className="d-flex" role="search">
@@ -45,6 +46,19 @@ function App() {
     </div>
   </div>
 </nav>
+<div className="container">
+  <footer className="py-3 my-4">
+    <ul className="nav justify-content-center border-bottom pb-3 mb-3">
+      <li className="nav-item"><a href="/" className="nav-link px-2 text-body-secondary">Home</a></li>
+      <li className="nav-item"><a href="/" className="nav-link px-2 text-body-secondary">About</a></li>
+      <li className="nav-item"><a href="/" className="nav-link px-2 text-body-secondary">Contact</a></li>
+      <li className="nav-item"><a href="/" className="nav-link px-2 text-body-secondary">Community</a></li>
+      <li className="nav-item"><a href="/" className="nav-link px-2 text-body-secondary">FAQs</a></li>
+    </ul>
+    <p className="text-center text-body-secondary">© 2023 TextUtils, Inc</p>
+  </footer>
+</div>
+</>
   );
 }
 
