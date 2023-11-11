@@ -46,6 +46,30 @@ function App() {
     </div>
   </div>
 </nav>
+<body>
+  <div className="body">
+    <div className="prompt">
+      <textarea name="" id="" placeholder="Write your text here"></textarea>
+      <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button"     data-bs-toggle="dropdown" aria-expanded="false">
+        Dropdown button
+      </button>
+    <ul class="dropdown-menu dropdown-menu-dark">
+      <li><a class="dropdown-item active" href="#">Uppercase</a></li>
+      <li><a class="dropdown-item" href="#">Lowercase</a></li>
+      <li><a class="dropdown-item" href="#">Sentence Case</a></li>
+      <li><a class="dropdown-item" href="#">Word Count</a></li>
+      <li><a class="dropdown-item" href="#">line Count</a></li>
+      <li><a class="dropdown-item" href="#">Find</a></li>
+      <li><a class="dropdown-item" href="#">Find and Replace</a></li>  
+  </ul>
+</div>
+    </div>
+    <div className="output">
+      <textarea name="" id="" placeholder="Output will be produced here"></textarea>
+    </div>
+  </div>
+</body>
 <div className="container">
   <footer className="py-3 my-4">
     <ul className="nav justify-content-center border-bottom pb-3 mb-3">
