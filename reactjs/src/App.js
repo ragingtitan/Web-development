@@ -19,7 +19,7 @@ function App() {
           <a className="nav-link active" href="/">About</a>
         </li>
         <li className="nav-item dropdown">
-          <a className="nav-link dropdown-toggle active" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a className="nav-link dropdown-toggle active" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="page">
             Login/Register
           </a>
           <ul className="dropdown-menu">
@@ -46,22 +46,21 @@ function App() {
     </div>
   </div>
 </nav>
-<body>
   <div className="body">
     <div className="prompt">
       <textarea name="" id="pmt" placeholder="Write your text here"></textarea>
-      <div class="dropdown">
-      <button class="btn btn-secondary dropdown-toggle" type="button"     data-bs-toggle="dropdown" aria-expanded="false">
-        Dropdown button
+      <div className="dropdown">
+      <button className="btn btn-secondary dropdown-toggle" type="button"     data-bs-toggle="dropdown" aria-expanded="false">
+        Utility
       </button>
-    <ul class="dropdown-menu dropdown-menu-dark">
-      <li><a class="dropdown-item active" href="#">Uppercase</a></li>
-      <li><a class="dropdown-item" href="#">Lowercase</a></li>
-      <li><a class="dropdown-item" href="#">Sentence Case</a></li>
-      <li><a class="dropdown-item" href="#">Word Count</a></li>
-      <li><a class="dropdown-item" href="#">line Count</a></li>
-      <li><a class="dropdown-item" href="#">Find</a></li>
-      <li><a class="dropdown-item" href="#">Find and Replace</a></li>  
+    <ul className="dropdown-menu dropdown-menu-dark">
+      <li id="uppercase"><a className="dropdown-item active" href="/">Uppercase</a></li>
+      <li id="lowercase"><a className="dropdown-item" href="/">Lowercase</a></li>
+      <li id="sentence"><a className="dropdown-item" href="/">Sentence Case</a></li>
+      <li id="wordcount"><a className="dropdown-item" href="/">Word Count</a></li>
+      <li id="linecount"><a className="dropdown-item" href="/">line Count</a></li>
+      <li id="find"><a className="dropdown-item" href="/">Find</a></li>
+      <li id="findreplace"><a className="dropdown-item" href="/">Find and Replace</a></li>  
   </ul>
 </div>
     </div>
@@ -69,7 +68,6 @@ function App() {
       <textarea name="" id="out" placeholder="Output will be produced here"></textarea>
     </div>
   </div>
-</body>
 <div className="container">
   <footer className="py-3 my-4">
     <ul className="nav justify-content-center border-bottom pb-3 mb-3">
