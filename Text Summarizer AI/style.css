@@ -1,0 +1,127 @@
+/*Login and register css*/
+/*Body*/
+body{
+    height: 100%;
+    width: 100%;
+}
+.body-wrapper{
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+}
+/*new Body code*/
+.inner-body-wrapper{
+    background-color: white;
+    height: 55vh;
+    width: 40vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    opacity: 0.9;
+}
+.input-group input{
+    padding: 10px 10px;
+    min-width: 15vw;
+    max-width: 27vw;
+    width: 25vw;
+    border: none;
+    border-radius: 5px;
+    border-bottom: 1px solid #cbcbcb;
+}
+.login-btn{
+    margin-top: 30px;
+    height: 37px;
+    width: 200px;
+    border: none;
+    border-radius: 50px;
+    /*background: linear-gradient(to right, 
+    blue, violet);*/
+    /*background: linear-gradient(to right, #ff9999, #66ccff);*/
+    background: linear-gradient(to right, #3498db, #1abc9c);
+    color: white;
+}
+.login-text{
+    font-size: 35px;
+    font-weight: 600;
+}
+.text{
+    font-size: 13px;
+}
+.text-2{
+    font-size: 15px;
+    color: rgb(99, 99, 99);
+    margin-top: 30px;
+}
+.signup-btn{
+    margin-top: 8px;
+    height: 37px;
+    width: 100px;
+    border: none;
+    border-radius: 50px;
+    /*background: linear-gradient(to right, #3498db, #1abc9c);*/
+    color: white;
+    background: linear-gradient(to right, #ff6f61, #ffcc5c);
+}
+
+/*Sign up*/
+.inner-body-wrapper{
+    background-color: white;
+    height: 70vh;
+    width: 40vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    opacity: 0.9;
+}
+.input-group input{
+    padding: 10px 10px;
+    min-width: 15vw;
+    max-width: 30vw;
+    width: 25vw;
+    border: none;
+    border-radius: 5px;
+    border-bottom: 1px solid #cbcbcb;
+}
+.login-btn{
+    margin-top: 8px;
+    height: 37px;
+    width: 100px;
+    border: none;
+    border-radius: 50px;
+    /*background: linear-gradient(to right, 
+    blue, violet);*/
+    /*background: linear-gradient(to right, #ff9999, #66ccff);*/
+    background: linear-gradient(to right, #3498db, #1abc9c);
+    color: white;
+}
+.register-text{
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.text{
+    font-size: 13px;
+}
+input{
+    margin: 7px 0px;
+}
+.text-2{
+    font-size: 15px;
+    color: rgb(99, 99, 99);
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+.signup-btn{
+    margin-top: 8px;
+    height: 37px;
+    width: 200px;
+    border: none;
+    border-radius: 50px;
+    /*background: linear-gradient(to right, #3498db, #1abc9c);*/
+    color: white;
+    background: linear-gradient(to right, #ff6f61, #ffcc5c);
+}
