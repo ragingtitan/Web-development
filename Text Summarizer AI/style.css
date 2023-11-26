@@ -225,7 +225,8 @@ input{
 }*/
 
 .button{
-    width: 100px;
+    margin: auto;
+    width: 128px;
 }
 
 .button:hover {
