@@ -214,7 +214,7 @@ input{
     border-color: #28a745;
 }
 
-.button {
+/*.button {
     background-color: #28a745;
     color: white;
     padding: 12px 20px;
@@ -222,6 +222,10 @@ input{
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.2s;
+}*/
+
+.button{
+    width: 100px;
 }
 
 .button:hover {

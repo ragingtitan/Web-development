@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded',()=>{
                     '<input type="email" id="email" name="email" class="input" required>' +
                     '<label for="message" class="label">Message:</label>' +
                     '<textarea id="message" name="message" class="input textarea" rows="4" required></textarea>' +
-                    '<button type="submit" class="button">Send Message</button>' +
+                    '<button type="submit" class="btn btn-outline-success button">Send Message</button>' +
                 '</form>' +
             '</div>' +
         '</div>';
