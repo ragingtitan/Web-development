@@ -1,25 +1,43 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const summarizeBtn = document.getElementById("summarize");
+// Axios is the framework we will be using to calling the API
 
-    summarizeBtn.addEventListener('click', () => {
-        let instructionsHTML =
-        '' +
-        '<h1 class="center mstop msbot font-size-40px">How to summarize?</h1>' +
-        '<ul class="p step center">' +
-        '    <li class="font-size-15px mstop msbot"><h2>1. Put your text below.</h2></li>' +
-        '    <li class="font-size-15px mstop msbot"><h2>2. Click on summarize.</h2></li>' +
-        '    <li class="font-size-15px mstop msbot15"><h2>3. Done!</h2></li>' +
-        '</ul>' +
-        '<form class="text flex-center">' +
-        '    <textarea class="mstop msbot" style="padding: 7px;" name="Input" id="inputtext" placeholder="Paste your text here." rows="15" cols="75"></textarea>' +
-        '</form>' +
-        '<div class="btn flex-center">' +
-        '    <button id="summarize-btn" class="btn btn-outline-success">Summarize</button>' +
-        '</div>' +
-        '<form class="text flex-center">' +
-        '    <textarea class="mstop msbot" style="padding: 7px;" name="Input" id="outputtext" placeholder="Your summary will appear here." rows="15" cols="75"></textarea>' +
-        '</form>';
+const axios = require('axios');
 
-        document.getElementById('body').innerHTML = DOMPurify.sanitize(instructionsHTML);
-    });
-});
+
+// This is the function where the call to the API is made. Returns the summarized text as a string.
+async function summarizeText(text) {
+  // INSERT CODE SNIPPET FROM POSTMAN BELOW
+  let data = JSON.stringify({
+    "inputs": text,
+    "parameters": {
+      "max_length": 100,
+      "min_length": 30
+    }
+  });
+
+  // A config object that will contain the instructions for the API call
+  let config = {
+    method: 'post',
+    url: 'https://api-inference.huggingface.co/models/facebook/bart-large-cnn',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': 'Bearer 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'
+    },
+    data: data
+  };
+
+  // Capture the request in a try/catch to check for any errors that may occur
+  try {
+    const response = await axios.request(config);
+    // Return the summary text from the response
+    return response.data[0].summary_text;
+  } catch (err) {
+    console.log(err);
+  }
+}
+
+
+
+
+// Allows for summarizeText() to be called outside of this file
+
+module.exports = summarizeText;

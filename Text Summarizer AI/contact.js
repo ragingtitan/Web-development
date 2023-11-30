@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded',()=>{
 
     // Use innerHTML to add the form to a specific element
     document.getElementById('body').innerHTML = DOMPurify.sanitize(contactFormHTML);
-    })
+    });
     
 
 });
