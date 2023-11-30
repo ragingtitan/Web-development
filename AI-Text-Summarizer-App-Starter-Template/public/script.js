@@ -1,3 +1,6 @@
+
+//THIS FILE IS NOT IN USE!!!!!
+
 document.addEventListener('DOMContentLoaded',()=>{
   
 const textArea = document.getElementById("text_to_summarize");
