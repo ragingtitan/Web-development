@@ -93,7 +93,6 @@ p {
 textarea {
   height: 300px;
   resize: none;
-  border: none;
   padding: 10px;
   margin-bottom: 10px;
 }
