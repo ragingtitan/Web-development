@@ -4,8 +4,8 @@ document.addEventListener('DOMContentLoaded',()=>{
     service.addEventListener('click',()=>{
         let appContent =
         '<h1 class="mstop font-size-40px msbot u">AI Text Summarizer App</h1>' +
-        '<p class="font-size-20px center">Welcome to the AI Text Summarizer App! This app leverages the power of Artificial Intelligence APIs to provide concise summaries of long texts. Whether you have a lengthy article, research paper, or any other text document that you want to summarize quickly, our app can assist you.</p>' +
-        '<p class="mstop font-size-20px center">Simply paste your text into the text area below and click the "Submit" button.</p>' +
+        '<p class="font-size-20px center p">Welcome to the AI Text Summarizer App! This app leverages the power of Artificial Intelligence APIs to provide concise summaries of long texts. Whether you have a lengthy article, research paper, or any other text document that you want to summarize quickly, our app can assist you.</p>' +
+        '<p class="mstop font-size-20px center p">Simply paste your text into the text area below and click the "Summarize" button.</p>' +
         '<div class="container">' +
           '<div class="text-box">' +
             '<textarea id="text_to_summarize" name="text_to_summarize" placeholder="Paste in some text to summarize. (Min length is 200 chars. Max length is 100,000 chars.)" maxlength="100000"></textarea>' +

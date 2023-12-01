@@ -8,11 +8,11 @@ document.addEventListener('DOMContentLoaded',()=>{
                 '<p class="form-description">Have a question or feedback? Reach out to us!</p>' +
                 '<form id="contactForm" class="form" onsubmit="submitForm(event)">' +
                     '<label for="name" class="label">Name:</label>' +
-                    '<input type="text" id="name" name="name" class="input" required>' +
+                    '<input type="text" id="name" name="name" class="input" required placeholder="Name">' +
                     '<label for="email" class="label">Email:</label>' +
-                    '<input type="email" id="email" name="email" class="input" required>' +
+                    '<input type="email" id="email" name="email" class="input" required placeholder="Email">' +
                     '<label for="message" class="label">Message:</label>' +
-                    '<textarea id="message" name="message" class="input textarea" rows="4" required></textarea>' +
+                    '<textarea id="message" name="message" class="input textarea" rows="4" required placeholder="Write a message for me"></textarea>' +
                     '<button type="submit" class="btn btn-outline-success button">Send Message</button>' +
                 '</form>' +
             '</div>' +
