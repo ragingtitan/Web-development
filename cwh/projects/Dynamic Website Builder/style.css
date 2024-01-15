@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+div{
+    border: 1px solid black;
+}
+.card-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-body {
+    display: flex;
+    width: 90%;
+    height: 100%;
+    flex-direction: column;
+}
+.card-info{
+    display: flex;
+}
