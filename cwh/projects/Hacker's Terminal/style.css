@@ -2,6 +2,17 @@
     margin: 0;
     padding: 0;
 }
+/* Change the color of the selected text */
+::selection {
+    background-color: white;
+    color: #0e0d0d; 
+}
+
+/* For Firefox compatibility */
+::-moz-selection {
+    background-color: #0e0d0d; 
+    color: white; 
+}
 html{
     height: 100vh;
     width: 100vw;
@@ -9,6 +20,7 @@ html{
 body {
     font-family: 'Cascadia Code', monospace;
     /* Additional styling for the body element */
+    padding: 1.5px;
   }
 .main{
     height: 100vh;
@@ -32,16 +44,7 @@ p{
     width: 90%;
     caret-color: white;
     font-weight: bold;
-}
-input::before {
-    content: '\00a0'; /* Non-breaking space to create a visual element */
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 2px; /* Adjust the width to control thickness */
-    height: 1.2em; /* Adjust the height to control length */
-    background-color: blue; /* Replace with your desired color */
+    padding: 0px 2.5px;
 }
 .cursor{
     width: 10px;
@@ -50,6 +53,7 @@ input::before {
 }
 .msg{
     height: 10px;
-    width: 90%;
-    margin: 10px 0px;
+    width: 95%;
+    margin: 9px 0px;
+    
 }
