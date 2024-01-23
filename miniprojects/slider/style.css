@@ -1,47 +1,32 @@
-.slider
-{
-    display: flex;
-    
+*{
+    margin: 0;
+    padding: 0;
 }
-img:hover{
-    cursor: pointer;
-}
-@keyframes slider1 {
-    from{
-        transform: translate(0vw);
-    }
-    to{
-        transform: translate(40vw);
-    }
-}
-.img1 img{
-    animation-name: slider1;
-    animation-duration: 1s;
-}
-
-@keyframes slider2 {
-    0%{
-        transform: translate(0vw);
-    }
-    100%{
-        transform: translate(40vw);
-    }
-}
-.img2 img{
-    animation-name: slider2;
-    animation-duration: 1s;   
-}
-img{
+html{
+    height: 100vh;
     width: 100vw;
 }
-.img3 img{
-    transform: translate(-305vw);
+body{
+    height: 100vh;
+    width: 100vw;
 }
-@keyframes slider2 {
-    0%{
-        transform: translate(-305vw);
-    }
-    100%{
-        transform: translate(-255vw);
-    }
+.body{
+    height: 100vh;
+    width: 100vw;
+}
+.body-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+.slider{
+    display: flex;
+    overflow-x: scroll;
+    width: 720px;
+    object-fit: cover;
+}
+.slider img{
+    object-fit: cover;
 }
