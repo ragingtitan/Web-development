@@ -20,13 +20,47 @@ body{
     align-items: center;
     height: 100vh;
     width: 100vw;
+    
 }
 .slider{
     display: flex;
-    overflow-x: scroll;
+    overflow: hidden;
     width: 720px;
     object-fit: cover;
+    scroll-snap-type: x mandatory;
+    box-sizing: border-box;
+    z-index: 1;
+    position: relative;
+    
+    
 }
 .slider img{
+    object-fit: cover;
+    scroll-snap-align: center;
+    transform: translateX(0);
+    transition: transform 0.3s ease-in-out;
+}
+.slider .img{
+    transition: transform 0.3s ease-in-out;
+}
+.btn{
+    height: 100px;
+    width: 30px;
+    height: 300px;
+    flex-shrink: 0;
+    opacity: 0.2;
+    border-radius: 10px;
+    border: 2px solid white;
+    z-index: 10;
+    
+}
+#btn-left{
+    position: relative;
+    left: 30px;
+    object-fit: cover;
+}
+#btn-right{
+    position: relative;
+    right: 30px;
     object-fit: cover;
 }
