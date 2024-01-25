@@ -1,0 +1,29 @@
+/*
+    let main=document.getElementById('main');
+    let prevBtn=document.getElementById('prev-btn');
+    let nextBtn=document.getElementById('next-btn');
+    let question=document.getElementById('question');
+    //let questionNo=document.getElementById('question-no');
+    let index=0;
+    let points=0;
+    //questions for the app
+
+   function startQuiz()
+   {
+    let index=0;
+    let points=0;
+    nextBtn.innerHTML="Next"
+    getQuestion();
+   }
+    function showQuestion(){
+        let currentQues=getQuestion(index);
+        let questionNo=index+1;
+        question.innerHTML=questionNo + ". " + currentQues;
+        currentQues.answer.forEach(answer => {
+           const btn=document.createElement("button");
+           btn.innerHTML=answer;
+           response.appendChild(btn);
+        });
+    }
+    startQuiz();
+    */

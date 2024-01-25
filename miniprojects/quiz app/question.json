@@ -1,0 +1,62 @@
+[
+    {
+        "question":"Do you currently have a fever?",
+        "answer":["yes","no","maybe"]
+    },
+    {
+        "question":"Have you experienced a persistent cough?",
+        "answer":["yes","no","maybe"]
+    },
+    {
+        "question":"Are you having difficulty breathing or shortness of breath?",
+        "answer":["yes","no","maybe"]
+    },
+    {
+        "question":"Have you noticed a sudden loss of taste or smell?",
+        "answer":["yes","no","maybe"]
+    },
+    {
+        "question":"Do you have muscle or body aches?",
+        "answer":["yes","no","maybe"]
+    },
+    {
+        "question":"Have you been experiencing fatigue or weakness?",
+        "answer":["yes","no","maybe"]
+    },
+    {
+        "question":"Do you have a sore throat?",
+        "answer":["yes","no","maybe"]
+    },
+    {
+        "question":"Have you had close contact with someone diagnosed with COVID-19 in the last 14 days?",
+        "answer":["yes","no","maybe"]
+    },
+    {
+        "question":"Have you recently traveled to an area with a high number of COVID-19 cases?",
+        "answer":["yes","no","maybe"]
+    },
+    {
+        "question":"Do you have chills or repeated shaking with chills?",
+        "answer":["yes","no","maybe"]
+    },
+    {
+        "question":"Have you experienced nausea, vomiting, or diarrhea?",
+        "answer":["yes","no","maybe"]
+    },
+    {
+        "question":"Have you been in crowded places or attended large gatherings recently?",
+        "answer":["yes","no","maybe"]
+    },
+    {
+        "question":"Do you have any pre-existing health conditions that may increase the severity of COVID-19 symptoms?",
+        "answer":["yes","no","maybe"]
+    },
+    {
+        "question":"Are you currently pregnant or have you recently given birth?",
+        "answer":["yes","no","maybe"]
+    },
+    {
+        "question":"Are you over the age of 65 or in a high-risk group?",
+        "answer":["yes","no","maybe"]
+    }
+]

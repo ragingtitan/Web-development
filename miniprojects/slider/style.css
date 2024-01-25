@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 html{
     height: 100vh;
@@ -31,8 +32,6 @@ body{
     box-sizing: border-box;
     z-index: 1;
     position: relative;
-    
-    
 }
 .slider img{
     object-fit: cover;
@@ -40,27 +39,39 @@ body{
     transform: translateX(0);
     transition: transform 0.3s ease-in-out;
 }
-.slider .img{
-    transition: transform 0.3s ease-in-out;
-}
 .btn{
-    height: 100px;
-    width: 30px;
-    height: 300px;
+    height: 410px;
+    width: 50px;
     flex-shrink: 0;
-    opacity: 0.2;
-    border-radius: 10px;
+    opacity: 0.1;
     border: 2px solid white;
     z-index: 10;
+    transition: opacity 0.1s ease-in-out;
+}
+.btn:hover{
+    cursor: pointer;
+    opacity: 0.8;
     
+}
+@keyframes anim {
+    from{
+        height: 30px;
+    }
+    to{
+        height: 50px;
+    }
 }
 #btn-left{
     position: relative;
-    left: 30px;
+    left: 50px;
     object-fit: cover;
 }
 #btn-right{
     position: relative;
-    right: 30px;
+    right: 50px;
     object-fit: cover;
+}
+svg{
+    height: 30px;
+   
 }
