@@ -28,14 +28,14 @@ body{
     overflow: hidden;
     width: 720px;
     object-fit: cover;
-    scroll-snap-type: x mandatory;
+    /*scroll-snap-type: x mandatory;*/
     box-sizing: border-box;
     z-index: 1;
     position: relative;
 }
 .slider img{
     object-fit: cover;
-    scroll-snap-align: center;
+    /*scroll-snap-align: center;*/
     transform: translateX(0);
     transition: transform 0.3s ease-in-out;
 }

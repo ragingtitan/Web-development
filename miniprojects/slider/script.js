@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded',()=>{
     //image.style.transform=`translateX(0px)`;
     console.log(image)
 
-    //  use scroll object instead of transform. Its easier and more managable
+    //Use scroll object instead of transform. Its easier and more managable
     rightbtn.addEventListener('click',()=>{
        slider.scrollLeft+=720;
     })
