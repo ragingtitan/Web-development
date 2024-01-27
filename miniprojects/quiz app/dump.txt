@@ -1,29 +1,92 @@
-/*
-    let main=document.getElementById('main');
-    let prevBtn=document.getElementById('prev-btn');
-    let nextBtn=document.getElementById('next-btn');
-    let question=document.getElementById('question');
-    //let questionNo=document.getElementById('question-no');
-    let index=0;
-    let points=0;
-    //questions for the app
+/*let questionElement = document.getElementById("question");
+let answerButtons = document.getElementById("answer-buttons");
+let nextButton = document.getElementById("next-btn");
 
-   function startQuiz()
-   {
-    let index=0;
-    let points=0;
-    nextBtn.innerHTML="Next"
-    getQuestion();
-   }
-    function showQuestion(){
-        let currentQues=getQuestion(index);
-        let questionNo=index+1;
-        question.innerHTML=questionNo + ". " + currentQues;
-        currentQues.answer.forEach(answer => {
-           const btn=document.createElement("button");
-           btn.innerHTML=answer;
-           response.appendChild(btn);
-        });
+let currentQuestionIndex = 0;
+let score = 0;
+
+async function fetchQuestions() {
+    try {
+        const response = await fetch('./question.json'); // Replace with the actual path to your JSON file
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        console.error('Error fetching questions:', error);
+        return [];
     }
-    startQuiz();
-    */
+}
+
+async function startQuiz() {
+    const questions = await fetchQuestions();
+    if (questions.length > 0) {
+        currentQuestionIndex = 0;
+        score = 0;
+        showQuestion();
+    } else {
+        console.error('No questions available.');
+    }
+}
+
+function showQuestion() {
+    resetState();
+    let currentQuestion = questions[currentQuestionIndex];
+    let questionNo = currentQuestionIndex + 1;
+    questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
+    currentQuestion.answers.forEach(answer => {
+        const button = document.createElement("button");
+        button.innerHTML = answer.text;
+        button.classList.add("btn");
+        answerButtons.appendChild(button);
+        if (answer.state === "yes" || answer.state === "no" || answer.state === "maybe") {
+            button.dataset.state = answer.state;
+        }
+        button.addEventListener('click', selectAnswer);
+    });
+}
+
+function resetState() {
+    nextButton.style.display = "none";
+    while (answerButtons.firstChild) {
+        answerButtons.removeChild(answerButtons.firstChild);
+    }
+}
+
+function selectAnswer(e) {
+    const selectedBtn = e.target;
+    selectedBtn.classList.add("selected");
+    if (selectedBtn.dataset.state === "yes") {
+        score++;
+    }
+    Array.from(answerButtons.children).forEach(button => {
+        button.disabled = true;
+    });
+    nextButton.style.display = "block";
+}
+
+function showScore() {
+    resetState();
+    // Add your score-based logic here
+    console.log(score);
+    nextButton.innerHTML = 'Take the test again?';
+    nextButton.style.display = "block";
+}
+
+function handleNextButton() {
+    currentQuestionIndex++;
+    if (currentQuestionIndex < questions.length) {
+        showQuestion();
+    } else {
+        showScore();
+    }
+}
+
+nextButton.addEventListener('click', () => {
+    if (currentQuestionIndex < questions.length) {
+        handleNextButton();
+    } else {
+        startQuiz();
+    }
+});
+
+startQuiz();
+*/

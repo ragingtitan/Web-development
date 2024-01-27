@@ -194,8 +194,8 @@ function showScore(){
     else{
 
     }
-    console.log(score)
-    nextButton.innerHTML='Take the test again?'
+    console.log(score);
+    nextButton.innerHTML='Take the test again?';
     nextButton.style.display="block";
 }
 
@@ -221,3 +221,4 @@ nextButton.addEventListener('click',()=>{
     }
 })
 startQuiz();
+
