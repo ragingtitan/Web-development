@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .loading-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.loading-btn::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  border: 2px solid transparent;
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+}
+
+.loading-btn.loading::after {
+  opacity: 1;
+}
+
+@keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+    </style>
+</head>
+<body>
+  <button class="loading-btn" onclick="toggleLoading()">Click Me</button>
+
+      <script>
+
+        function toggleLoading() {
+  var btn = document.querySelector('.loading-btn');
+  btn.style.content="";
+  btn.classList.add('loading');
+  setTimeout(function() {
+    btn.classList.remove('loading');
+  }, 3000);
+}
+
+      </script>
+</body>
+</html>

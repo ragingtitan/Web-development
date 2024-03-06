@@ -1,23 +1,24 @@
-/*let questionElement = document.getElementById("question");
+let questionElement = document.getElementById("question");
 let answerButtons = document.getElementById("answer-buttons");
 let nextButton = document.getElementById("next-btn");
 
 let currentQuestionIndex = 0;
 let score = 0;
+let questions; // Declare questions globally
 
 async function fetchQuestions() {
     try {
-        const response = await fetch('./question.json'); // Replace with the actual path to your JSON file
+        const response = await fetch('./symptoms.json'); // Replace with the actual path to your JSON file
         const data = await response.json();
-        return data;
+        questions = data; // Assign data to the global variable
     } catch (error) {
         console.error('Error fetching questions:', error);
-        return [];
+        questions = [];
     }
 }
 
 async function startQuiz() {
-    const questions = await fetchQuestions();
+    await fetchQuestions(); // Wait for questions to be fetched
     if (questions.length > 0) {
         currentQuestionIndex = 0;
         score = 0;
@@ -61,11 +62,31 @@ function selectAnswer(e) {
         button.disabled = true;
     });
     nextButton.style.display = "block";
+    nextButton.innerHTML="Next";
 }
 
 function showScore() {
     resetState();
     // Add your score-based logic here
+    if(score>=0 && score <=5)
+    {
+        questionElement.innerHTML=`<p class="text-green-500">Your symptoms suggest a low risk of COVID-19. Continue to practice preventive measures and monitor your health.</p>`;
+        
+    }
+    else if(score>=6 && score <=10)
+    {
+        questionElement.innerHTML=`<p class="text-yellow-500">You have moderate symptoms. Consider contacting a healthcare professional for further guidance.</p>`;
+        
+
+    }
+    else if(score>=11 && score<=15)
+    {
+        questionElement.innerHTML=`<p class="text-red-500">Your symptoms indicate a high risk of COVID-19. Please seek immediate medical attention. You can access health facilities from our website.</p>`;
+       
+    }
+    else{
+
+    }
     console.log(score);
     nextButton.innerHTML = 'Take the test again?';
     nextButton.style.display = "block";
@@ -89,4 +110,27 @@ nextButton.addEventListener('click', () => {
 });
 
 startQuiz();
-*/
+//new
+
+let startQuizBtn = document.querySelector('.loading-btn');
+let welcome=document.querySelector('.welcome');
+let app=document.querySelector('.app');
+startQuizBtn.addEventListener('click',()=>{
+    setTimeout(()=>{
+        app.style.animationName = 'anim1';
+        app.style.animationDuration ='0.5s';
+        welcome.classList.add('hidden');
+        app.classList.remove('hidden');
+    },2000)
+    
+})
+function toggleLoading() {
+    var btn = document.querySelector('.loading-btn');
+    btn.disabled = true;
+    btn.textContent = '';
+    btn.classList.add('loading');
+    setTimeout(function() {
+      btn.classList.remove('loading');
+    }, 3000);
+  }
+  

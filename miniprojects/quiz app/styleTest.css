@@ -3,6 +3,7 @@
     padding: 0;
     font-family: 'poppins', sans-serif;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 .body{
     background-color: #001e4d;
@@ -66,6 +67,7 @@
 }
 .btn:disabled{
     cursor: no-drop;
+    opacity: 0.85;
 }
 #next-btn{
     background: #001e4d;
@@ -87,6 +89,75 @@
 }
 #answer-buttons{
     width: 90%;
-    max-width: 500px;
+    max-width: 600px;
     margin:20px 0px ;
 }
+@keyframes anim1 {
+    from{
+        transform: translateX(200px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+@media (max-width: 800px) {
+    /* Styles for extra small devices */
+    .welcome{
+        max-height: fit-content;
+        gap: 0px;
+        margin: 0;
+        padding: 0;
+    }
+    .text1{
+        display: none;
+    }
+  }
+  .loading-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #001e4d;
+    height: 50px;
+    width: 150px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  .loading-btn:hover{
+    opacity: 0.9;
+  }
+  
+  .loading-btn::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    border: 2px solid transparent;
+    border-top-color: #fff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+  }
+  
+  .loading-btn.loading::after {
+    opacity: 1;
+  }
+  .loading-btn:disabled{
+    
+    cursor: no-drop;
+    opacity: 0.5;
+  }
+  @keyframes spin {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
